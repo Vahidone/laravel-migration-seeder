@@ -10,8 +10,12 @@
 
 </head>
 <body>
+    <div class="container my-5 py-5">
 
-    @yield('content')
+        @yield('content')
+
+    </div>
+
 
 </body>
 </html>
