@@ -18,15 +18,16 @@ return new class extends Migration
             $table->string('company', 50);
             $table->string('departure_station', 50);
             $table->string('arrival_station', 50);
-            $table->date('departure_time');
-            $table->date('arrival_time');
+            $table->dateTime('departure_time');
+            $table->timestamp('arrival_time')->default(now());
             $table->tinyInteger('train_code')->unsigned();
             $table->tinyInteger('carriage_number')->unsigned();
-            $table->boolean('on_time');
-            $table->boolean('canceled');
+            $table->boolean('on_time')->default(true);
+            $table->boolean('canceled')->default(false);;
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
