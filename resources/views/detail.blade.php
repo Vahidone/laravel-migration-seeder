@@ -1,8 +1,9 @@
-
 @extends('layouts.main')
 
 
 @section('content')
+
+<h1>sono DETAIL</h1>
 
 <table class="table table-success table-striped text-center">
     <thead>
@@ -17,24 +18,25 @@
       </tr>
     </thead>
     <tbody>
-        @foreach ($trains as $train )
 
-            <tr>
-                <td><a href="{{ route('detail', ['id' => $train->id])}}">{{ $train->train_code}}</a></td>
-                <td>{{ $train->departure_station}}</td>
-                <td>{{ $train->arrival_station}}</td>
-                <td>{{ $train->departure_time}}</td>
-                <td>{{ $train->arrival_time}}</td>
-                <td>{{ $train->company}}</td>
-                <td>{{ $train->carriage_number}}</td>
 
-            </tr>
+        <tr>
+            <td>{{ $train->train_code}}</td>
+            <td>{{ $train->departure_station}}</td>
+            <td>{{ $train->arrival_station}}</td>
+            <td>{{ $train->departure_time}}</td>
+            <td>{{ $train->arrival_time}}</td>
+            <td>{{ $train->company}}</td>
+            <td>{{ $train->carriage_number}}</td>
 
-        @endforeach
+        </tr>
+
 
 
     </tbody>
   </table>
+
+  <a href="{{ route('home')}}" class="btn btn-danger mt-5">Torna in homepage</a>
 
 
 

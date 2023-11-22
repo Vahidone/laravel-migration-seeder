@@ -1,0 +1,20 @@
+
+
+
+body {
+    background-color: darkgreen;
+}
+
+
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: blue;
+    &:hover {
+        color: rgb(70, 16, 16);
+
+    }
+
+}

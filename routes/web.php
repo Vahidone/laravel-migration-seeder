@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\Guest\PhpController;
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', [PhpController::class, 'index'])->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/detail{id}', [PageController::class, 'detail'])->name('detail');
