@@ -18,7 +18,7 @@
         @foreach ($trains as $train )
 
             <tr>
-                <td>>{{ $train->train_code}}</td>
+                <td>{{ $train->train_code}}</td>
                 <td>{{ $train->departure_station}}</td>
                 <td>{{ $train->arrival_station}}</td>
                 <td>{{ $train->company}}</td>

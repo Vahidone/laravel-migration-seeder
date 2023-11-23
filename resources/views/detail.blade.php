@@ -3,7 +3,7 @@
 
 @section('content')
 
-<h1>sono DETAIL</h1>
+
 
 <table class="table table-success table-striped text-center">
     <thead>
