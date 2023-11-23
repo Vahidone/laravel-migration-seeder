@@ -18,7 +18,7 @@ class TrainsTableSeeder extends Seeder
         for($i = 0; $i < 100; $i++){
 
             $train = new Train();
-            $train->company = $faker->word();
+            $train->company = $faker->word(3, true);
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
             $train->departure_time = $faker->dateTimeInInterval('+1 day', '+2 day');
