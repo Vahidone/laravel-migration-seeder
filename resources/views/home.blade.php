@@ -7,11 +7,11 @@
 <table class="table table-success table-striped text-center">
     <thead>
       <tr>
-        <th scope="col">Codice treno</th>
-        <th scope="col">Stazione di partenza</th>
-        <th scope="col">Stazione di arrivo</th>
-        <th scope="col">Azienda</th>
-        <th scope="col">Dettagli</th>
+        <th scope="col" class="bg-danger text-white">Codice treno</th>
+        <th scope="col" class="bg-danger text-white">Stazione di partenza</th>
+        <th scope="col" class="bg-danger text-white">Stazione di arrivo</th>
+        <th scope="col" class="bg-danger text-white">Azienda</th>
+        <th scope="col" class="bg-danger text-white">Dettagli</th>
       </tr>
     </thead>
     <tbody>
